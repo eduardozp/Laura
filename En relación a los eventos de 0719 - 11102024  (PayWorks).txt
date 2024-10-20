@@ -1,0 +1,23 @@
+[EXTERNAL] En relación a los eventos de 07:19 - 11/10/2024  (PayWorks)
+
+Buena Tarde Wendy  | Pedro | Gerardo | Equipo Linux 
+
+Deribado  del CHG0108548  ( Actualizacion  RH8  8.9 a 8.10 ) en donde se presenta un encolamiento de procesos al realizar esta actividad y el mismo se resolvio al bajar el agente de Deep Security ,  les solicitamos avisarnos en futuros cambios para realizar una validación.  De nuestro lado estamos checando y realizaremos las pruebas correpondiente  y recomendaciones del fabricante en Ambiente Previo para evitar este tipo de situaciones.
+
+Nota: Anexo documento con mas detalle. Adicinal solicitamos a medida de lo posible homologar las plataformas de los ambientes para que las pruebas sean mas reales.
+
+
+Gracias
+
+
+ 
+
+Descripción: Descripción: Descripción: pleca firmas-03
+
+  Héctor Javier Acuña Trejo
+
+  ESPECIALISTA JR SEGURIDAD DISTRIBUIDO
+
+  Dirección Ejecutiva de Ciberseguridad (DECS)
+
+  hector.acuna.trejo@banorte.com
