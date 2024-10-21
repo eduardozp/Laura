@@ -1,87 +1,726 @@
 <!DOCTYPE html>
-<html lang="es">
-<!-- todoreal.com -->
-<head>
+  <head>
+
+    <title>Laura</title>
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <!-- Laura-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pregunta Especial</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .button-container {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        #si-button {
-            background-color: green;
-            color: white;
-        }
-
-        #no-button {
-            background-color: red;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <h3>IMPORTANTE: ¡LEER BAJO SU PROPIO RIESGO! </h3>
-    <h1>Laura... </h1>
-    <p>Aquella broma que no fue de tu agrado, ¿recuerdas? </p>
-    <p>Te va a sonar extraño, pero en las últimas semanas no he dejado de pensar en lo que me dijiste aquella ocasión “Tú y Yo, no hemos estado juntos”. </p>
-    <p>Aunque también, recuerdo en algún momento me dijiste “Yo no saldría con alguien con Novia, ya no”.  </p>
     
-    <div class="button-container">
-        <button class="button" id="si-button" onclick="respuesta('si')">Claro que ¡Sí!</button>
-        <button class="button" id="no-button" onclick="respuesta('no')">¡No!</button>
-    </div>
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link href="css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+      
+    <script src="js/jquery-1.10.2.min.js"></script> 
+	<script src="js/jquery.lightbox.js"></script>
+	<script src="js/templatemo_custom.js"></script>
     <script>
-        function respuesta(respuesta) {
-            if (respuesta === 'si') {
-                alert(' ❤️');
-            } else {
-                alert(' No te creo... Elige otro opción... jajajajaja');
-            }
-        }
-        setInterval(moverBotonNoAleatoriamente, 500);
+    function showhide()
+    {
+    	var div = document.getElementById("newpost");
+		if (div.style.display !== "none")
+		{
+			div.style.display = "none";
+		}
+		else {
+			div.style.display = "block";
+		}
+    }
+  	</script>
 
-        function moverBotonNoAleatoriamente() {
-            var botonNo = document.getElementById('no-button');
-            var maxX = window.innerWidth - botonNo.offsetWidth;
-            var maxY = window.innerHeight - botonNo.offsetHeight;
+  </head>
+  <body>
+  	<div class="site-header">
+		<div class="main-navigation">
+			<div class="responsive_menu">
+				<ul>
+					<li><a class="show-1 templatemo_home" href="#">Galería</a></li>
+					<li><a class="show-2 templatemo_page2" href="#">No abrir</a></li>
+					<li><a class="show-5 templatemo_page5" href="#">Leéme</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row templatemo_gallerygap">
+					<div class="col-md-12 responsive-menu">
+						<a href="#" class="menu-toggle-btn">
+				            <i class="fa fa-bars"></i>
+				        </a>
+					</div> <!-- /.col-md-12 -->
+                    <div class="col-md-3 col-sm-12">
+                    	<a href="#"><img src="images/ojos.png" alt="Polygon HTML5 Template"></a>
+                    </div>
+					<div class="col-md-9 main_menu">
+						<ul>
+							<li><a class="show-1 templatemo_home" href="#">
+                            	<span class="fa fa-camera"></span>
+                                Galería</a></li>
+							<li><a class="show-2 templatemo_page2" href="#">
+                            	<span class="fa fa-users"></span>
+                          		No abrir</a></li>
+							<li><a class="show-5 templatemo_page5" href="#">
+                            	<span class="fa fa-envelope"></span>
+                                Leéme</a></li>
+						</ul>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.main-navigation -->
+	</div> <!-- /.site-header -->
+    <div id="menu-container">
+    <!-- gallery start -->
+    <div class="content homepage" id="menu-1">
+    <div class="container">
+	    <div class="row templatemorow">
+    		<div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/1.webp);">
+             	 	<div class="overlay">
+						<a href="images/gallery/1.webp" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/2.png);">
+              	<div class="overlay">
+						<a href="images/gallery/2.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/3.png);">
+              	<div class="overlay">
+						<a href="images/gallery/3.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/4.png);">
+              	<div class="overlay">
+						<a href="images/gallery/4.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/5.png);">
+              		<div class="overlay">
+						<a href="images/gallery/5.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/6.png);">
+              		<div class="overlay">
+						<a href="images/gallery/6.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/7.png);">
+              		<div class="overlay">
+						<a href="images/gallery/7.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/8.png);">
+              		<div class="overlay">
+						<a href="images/gallery/8.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/9.png);">
+              		<div class="overlay">
+						<a href="images/gallery/9.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div  id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
+	    <div class="row templatemorow">
+    		<div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/10.png);">
+             	 	<div class="overlay">
+						<a href="images/gallery/10.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/11.png);">
+              	<div class="overlay">
+						<a href="images/gallery/11.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/12.png);">
+              	<div class="overlay">
+						<a href="images/gallery/12.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/13.png);">
+              	<div class="overlay">
+						<a href="images/gallery/13.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/14.png);">
+              		<div class="overlay">
+						<a href="images/gallery/14.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/15.png);">
+              		<div class="overlay">
+						<a href="images/gallery/15.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/16.png);">
+              		<div class="overlay">
+						<a href="images/gallery/16.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/17.png);">
+              		<div class="overlay">
+						<a href="images/gallery/17.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/18.png);">
+              		<div class="overlay">
+						<a href="images/gallery/18.png" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div class="container">
+    	<div class="row">
+        	<div class="templatemo_loadmore">
+			 <button class="gallery_more" id="button" onClick="showhide()">Load More</button>			 
+            </div>
+			<h2 style="color: red;">¡AVISO!</h2>
+			<h2 style="color: red;">LEER BAJO SU PROPIO RIESGO...  </h2>
+        </div>
+    </div>
+    </div>
+      <!-- gallery end -->
+    <!-- team start -->
 
-            var randomX = Math.floor(Math.random() * maxX);
-            var randomY = Math.floor(Math.random() * maxY);
-
-            botonNo.style.position = 'absolute';
-            botonNo.style.left = randomX + 'px';
-            botonNo.style.top = randomY + 'px';
-        }
+    <div class="content team" id="menu-2">
+     <div class="templatemo_ourteam">
+     		<div class="container templatemo_hexteam">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/1.png);">
+                                <div class="overlay templatemo_overlay1">                           	
+                                </div>
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Quédate, siempre, dónde te miren como si todo el arte del universo estuviera en tus ojitos.</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Caer derrotado ante tus encantos.  </h2>                        
+						<p>Quiero hacerte el amor, ahogar mis besos en tu piel sentir tus dedos recorrer la mía, quiero hacerte el amor sin compromisos, quiero hacerte el amor hasta el cansancio, quiero hacerte el amor, quiero estar en ti y dentro de ti, sentir que estoy vivo.</p>						
+						<p>Quiero hacerte el amor, ahogar mis besos en tu piel sentir tus dedos recorrer la mía, quiero hacerte el amor sin compromisos, quiero hacerte el amor hasta el cansancio, quiero hacerte el amor, quiero estar en ti y dentro de ti, sentir que estoy vivo.</p>  
+						<p>Sentir tu vientre palpitar, dilatarse bajo mis manos, recorrerlo despacio, asombrándome con él a cada milímetro. Que cuando tu ropa caiga despacio y ... sin prisa mis ojos se llenen de ti. Mis sentidos se embriaguen de tu perfume, de tu fragancia, de tu olor. Que, al desnudarte la belleza, tu belleza, me haga perder el control. Y perderme de manera total y absoluta en ti, en tu cuerpo.</p>  
+						<p>Caer derrotado ante tus encantos. </p> 
+						<p>Quedar pasmado por tus caricias, poseerte, disfrutarte, gozarte, sentirte. Sueño con el día en que te descubras ante mí. Con tu uniforme del trabajo tirado a los pies de la cama. Ansío ese día en que apenas una frágil capa de lencería te proteja, te cubra. Y mientras los encajes y transparencias te traten de cubrir, en realidad no hagan sino destacarte. Sostener sus encantos, mostrar tus formas rotundas, tremendas, fabulosas y excitantes a más no poder.</p>
+						<p>La lujuria se posesiona de mí. El deseo me lleva hasta la cumbre de la dicha. Tu cuerpo, tus besos, tus manos, tus palabras y gemidos me atontarían, me esclavizarían; dejándome apenas sin control.</p>
+						<p>Quiero, deseo, necesito tus caricias, tu sexo húmedo y palpitante. Y lo deseo por la sensualidad, no por la sexualidad. Porque quiero complementarme en ti. Sé que, en ti me sentiré pleno, lleno y satisfecho.</p>
+						<p>Pero mientras ese glorioso día llega de aparecerte en mis sueños, en perturbar mis noches con tus interminables desfiles de lencería. Con tu boca traviesa y llena de palabras perturbadoras, de amor, de insana pasión. Tú cara hermosa, tus pechos florecientes, tus caderas increíbles. Tu sensualidad apenas contenida, tu sexualidad a flor de piel.</p>
+						<p>Ya no hagas solo en sueños lo que tanto anhelo. Goza, como yo gozo contigo en sueños. Todo el deseo contenido por ti explotará en una interminable cadena de espasmos de placer. De elucubraciones morbosas. De un catártico placer. De nuestros cuerpos sudorosos, agotados apenas sostenidos por un hálito de vida. Entregados en su totalidad a los placeres carnales. Dilatados… Incapaces de recordar las locuras cometidas apenas unos segundos antes… Pero… Sobre todo, con el placer, mutuo, saliendo de cada poro de nuestros cuerpos. Estos cuerpos, que aun cuando el tuyo es la personificación de la perfección, apenas podrán contener nuestros sentidos. Cuando las miradas no sean suficientes, las manos hablarán por nosotros.</p>
+                    </div>
+                    <div class="templatemo_servicecol2">
+                    <div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/2.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">¡Nada es para siempre pero, hazlo inolvidable!</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                    	<h2>Responde a tus instintos</h2>
+						<p>Deseo hacerte el amor como nunca te lo han hecho,<br /> 
+						Quiero te sientas la mujer más feliz del universo<br />
+						Quiero estar dentro de ti una y otra vez<br />
+						Que tus movimientos se unifiquen con los míos<br />
+						Que tu piel y todo tu cuerpo arda de pasión incontenible.
+						</p>
+						<p>Deseo que te dejes llevar por mis fantasías,<br />
+						mientras muerdo y lamo tu cuello<br />
+						Déjate llevar por mí, solo responde a tus instintos<br />
+						Permíteme morder tu boca, besar tu cuerpo,<br />
+						acariciar tu espalda y apretarte fuerte hacia mí,<br />
+						girar, subir y bajar, poseerte todo, sentirte mía,<br />
+						muy dentro de mí ser, uno solo o muchos días más. 
+						</p>
+						<p>Y goza todo lo que puedas, no guardes nada,<br />
+						no pierdas tiempo disfruta del encuentro.<br />
+						Yo seré quien aguante tu furia, tu pasión,<br />
+						todas esas cosas que deseas y no te animas a nombrar... 
+						</p>
+						<p>Llévalas a tu mente... ahí están.<br />
+						Es hora de hacerlas realidad.<br />
+						Por eso estoy aquí para brindarte todo lo que necesitas<br />
+						y hace tiempo nadie te da.
+						</p>
+						<p>Si tú estás conmigo, deseo verte, sentirte feliz,<br />
+						aunque sea sólo en unas horas de pasión desenfrenada,<br />
+						y luego nada, serás tú y seré yo, ser ese hombre y esa mujer,<br />
+						que sin esperar nada a cambio sólo placer<br />
+						cuantas veces lo desees... yo estaré aquí esperando ese día... 
+						</p>
+                    </div>
+                    </div>
+               </div>
+            </div>
+            <div class="clear"></div>
+            <div class="container templatemo_hexteam s_top">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/3.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Eres Un Enigma Que Es Imposible De Resolver...</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Las curvas de tu anatomía...</h2>
+                        <p> 
+						Quiero hacerte el amor de las maneras que nadie lo ha podido hacer...<br />  
+						Con mis ojos deleitando los tuyos, atravesando los matices y el brillo de tu mirada...<br />
+						Con mi boca rozando las curvas de tu anatomía...<br />
+						Respirando el aroma que aquel perfume dejó en tu piel,<br />
+						(porque ningún aroma se compara...)
+						</p>
+                        <p> 
+						Con tu cabello enredado entre mis dedos...<br />
+						Con mi aliento, caliente, húmedo sumado a respiraciones,<br />
+						mezcladas de palabras que se convierten en susurros largos y llenos de pausa.
+						</p>
+                        <p> 
+						Con mi piel queriendo vestirse de la tuya...<br />
+						Con tu pecho tan cerca del mío,<br />
+						que nuestros corazones sintonicen la hora exacta del momento preciso...   						
+						</p>
+                        <p> 
+						Con tu sudor cayendo sobre el mío<br />  
+						Con tu sexo ordenando a mí sexo<br />
+						Con tus caricias tiernas y no tan sutiles<br />
+						Con el deseo de morir para revivir<br />
+						Con orgasmos de placer que nos descontrolan hasta el delirio,<br />
+						de esos punzantes segundos, mortales y celestiales.			
+						</p>
+                        <p> 
+						Que hacen desconectar la fibra del sentido.<br />
+						Muriendo y viviendo entre tus deseos y los míos.						
+						</p>
+                    </div>
+                    <div class="templatemo_servicecol2">
+                    <div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/4.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Cuando disfrutamos del pecado, bien vale la pena pagar la penitencia.</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                    	<h2>Hacer lo indecente...</h2>
+                        <p>Hoy quiero hacerte el amor <br />
+							Recorrer por tu pecho <br />
+							Desnudarte lentamente<br />
+							Hacer lo indecente <br />
+							De la manera más decente. 							
+						</p>
+						<p>	Hacer subir el calor <br />
+							Mientras cae tu ropa interior<br /> 
+							Besar tus senos <br />
+							Acariciarte de lleno <br />
+							Bajar por tu ombligo  <br />
+							Ser más que ese amigo. 							  
+						</p>
+						<p> Hacerte el amor salvaje <br />
+							Llevarte a un viaje, de placer<br /> 
+							Ver las gotas de sudor caer <br />
+							Jalar tu cabello en distintas direcciones.
+						</p>
+						<p> Hacer diferentes posiciones <br />
+							Ponerte a gemir, hasta hacerte venir <br />
+							Es la mejor manera en la que te puedo hacer feliz. <br /><br />
+							Quiero hacerte el amor.
+						</p>
+                    </div>
+                    </div>
+               </div>
+            </div>
+			
+			<div class="container templatemo_hexteam s_top">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/5.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Todos tenemos un lado travieso que a veces necesita que lo inviten a jugar.</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Morder tus labios...</h2>
+						<p>Ese deseo que sofoca de querer besar tu boca,<br />  
+							muero por poner mis manos en tu pelo,  <br />
+							deslizar mi boca por tu cuello,  <br />
+							recorrer mis labios por tus hombros mientras mis manos se pierden en tu falda.
+						</p>
+						<p>	Quiero sentir tus manos recorriendo lentamente mi espalda, <br /> 
+							bajar mis labios buscando el calor de tus pechos,  <br />
+							poner a bailar mis manos sobre tus piernas recorriendo tu belleza.
+						</p>
+						<p>	Muero de ganas de ver caer tu ropa en el suelo,  <br />
+							pegarte a mi cuerpo y sentir temblar el tuyo,  <br />
+							mojar tu vagina con mis dedos,  <br />
+							morder tus labios apasionadamente.
+						</p>
+						<p>	Quiero sentir tus manos apretándome,  <br />
+							sentir tus gemidos en mi oído el más dulce regalo.
+						</p>
+						<p>	Quiero sentir tus besos en mi pecho,  <br />
+							ver como tu boca se desliza hasta mi ingle,  <br />
+							perder mi glande entre tus labios.
+						</p>
+						<p>	Quiero verte amar como una loca,  <br />
+							sin límites ni medida, quiero ser el callejón del cual ya no tienes salida.
+						</p>
+						<p>	Quiero devorar tu sexo con mi lengua,  <br />
+							arrancarte del cuerpo mil gemidos,  <br />
+							borrar tus perjuicios y deseos locos reprimidos.
+						</p>
+						<p>	Quiero hundirme entre tus piernas,  <br />
+							aférrame como un loco a tus caderas,  <br />
+							besar tu boca hasta que duela.
+						</p>
+						<p>	Quiero causar un terremoto en tus caderas,  <br />
+							mojar tu cuerpo de pasión,  <br />
+							amarte como una bestia sin control.   						  
+						</p>
+						<p>	Quiero sentir un orgasmo, una explosión,  <br />
+							ver tu cara de placer que destile pasión.   						  
+						</p>
+						<p>	Vida mía quiero hacerte mía, quiero hacerte el amor, <br /> 
+							fundirnos el uno al otro como un par de amantes sin control.   
+						</p>
+                    </div>
+                    <div class="templatemo_servicecol2">
+                    <div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/6.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Hasta que en tus ojos miré todo un universo...</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                    	<h2>Poner los temores de rodillas</h2>
+						<p>	Que ganas de besar tu cuello<br />
+							y hacer explotar con gemidos tu boca,<br />
+							que ganas de perderme en tus senos,<br />
+							de resbalar mis dedos y perderlos en tu ropa. 
+						</p>
+						<p>	Hagamos de las sábanas el cielo,<br />
+							quiero sentir tu nariz en mi mejilla,<br /> 
+							el olor de tu cabello erizándome la piel,<br />
+							que se extienda el fuego sobre mi pecho,<br />
+							poniendo los temores de rodillas.   
+						</p>
+						<p>	Quiero que cubras mis labios con el sabor de tu boca,<br />
+							que caigan los miedos al suelo junto con la ropa.
+						</p>
+						<p>	Quiero sentir tu cuerpo sobre el mío,<br />
+							el golpeteo sensual de tus caderas,<br />
+							guardando tus gestos en mis ojos,<br />
+							y sentir la magia que provocan.   
+						</p>
+						<p>	Que se detenga el tiempo unos minutos,<br /> 
+							hagamos de la habitación el paraíso,<br />
+							que se funda tu sexo con el mío,<br />
+							que se aferren tus manos a mi espalda,<br />  
+							que me abrasen tus piernas con locura,<br />
+							que me enferme de placer, que no haya cura.   
+						</p>
+						<p>	Que nos agitemos tanto en un segundo hasta perder el aliento,<br />
+							que el orgasmo, se convierta en un grito y que rompa el silencio.   
+						</p>  
+						<p>	Quiero terminar exhausto de ti,<br />
+							del sabor de tus besos,<br />
+							del calor de tu cuerpo. 
+						</p>
+						<p>	Tengo ganas de dejar de soñarlo, de hacer realidad ese momento.   	
+						</p>
+                    </div>
+                    </div>
+               </div>
+            </div>
+			
+			<div class="container templatemo_hexteam s_top">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/7.png);">
+                                <div class="overlay templatemo_overlay1">
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Si por besarte tuviera que ir después al infierno, lo haría.</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Quiero hacerte el amor y cogerte.</h2>
+						<p>	
+						Quiero hacerte el amor y cogerte, <br /> 
+						hasta que tu alma se impregne en la mía,<br />    
+						y tus huellas queden marcadas<br />
+						en mi piel, rasguños, mordidas, lamidas, lo quiero todo.    							
+						</p>
+						<p>
+						Pero también quiero que tus caricias penetren mi piel,<br />
+						y que tatúes en mi recuerdo la maravillosa magia de la unión de dos almas. 
+						</p>
+						<p>	
+						Me gustan las cosas eternas, ese recuerdo latente en mi memoria,<br />
+						lo ardiente del deseo, el romanticismo después del sexo,<br />
+						porque sé y he aprendido que los sentimientos merecen ser palpitados<br />
+						por personas enteras o al menos al mismo nivel de interés que el tuyo.    
+						</p>
+						<p>	
+						Porque no hay nada más maravilloso que bailar sobre fuego con quien tiene alma de volcán.
+						</p>
+						
+                    </div>
+               </div>
+            </div>
+            
+     </div>
+     </div>
+    <!--team end-->
+    <div class="clear"></div>
+    <!-- contact start -->
+    <div class="content contact" id="menu-5">    
+	<div class="container">	
+     	<div class="row">
+        	<div class="col-md-4 col-sm-12">
+            	<div class="templatemo_contactmap">    			
+					<img src="images/lau.png">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 leftalign">
+            	<div class="templatemo_contacttitle">
+					<h2>
+						<strong>Laura</strong>
+					</h2>
+				</div>
+                <p> 
+					Aquella broma que no fue de tu agrado, <br /><br />¿recuerdas? <br /> <br />
+					Te va a sonar extraño, pero en las últimas semanas no he dejado de pensar en lo que me dijiste aquella ocasión “Tú y Yo, no hemos estado juntos”. <br /><br />
+					Aunque también, recuerdo en algún momento me dijiste “Yo no saldría con alguien con Novia, ya no”.  <br /><br />
+					A esto último, me gustaría que hicieras una excepción a tus principios, conmigo. <br /><br />
+					En esta ocasión NO ES BROMA. <br /><br />
+					Pero también quiero que sepas que no pretendo ofenderte ni mucho menos molestarte. <br />
+					Te he mencionado varias veces lo que pienso acerca de ti, de la belleza que encuentro en la inmensidad de tus ojos.<br />
+					También, te preguntaras por qué no te lo digo en persona, quiero decírtelo, pero no puedo hacerlo frente a frente porque me enredo, me distraigo con tus ojos y labios. <br />
+					Y entonces se me olvida, porque me haces temblar. <br /><br />
+					¿Qué pensabas, que eras la única que se pone nerviosa? <br />
+					Pues no... <br /><br />
+					Pero quiero hacerlo porque debes saberlo. <br />
+					Y así es como tengo que decírtelo. 	<br />
+				</p>
+				<h2>ATT. Lalo</h2>
+            </div>
+            <div class="col-md-5 col-sm-12">
+            	<form role="form">
+				
+              	<div class="templatemo_form"><button onclick="document.location='responder.html'" type="button" class="btn btn-primary">Enviar respuesta</button></div>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- contact end -->
+	<!-- footer start -->
+    <div class="templatemo_footer">
+    	<div class="container">
+    	<div class="row">
+        	<div class="col-md-9 col-sm-12">
+            	<span>Copyright &copy; 2024 Company Name | Laura: Perteneces a los placeres prohibidos de este Universo! </span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- footer end -->    
+	<script>
+	$('.gallery_more').click(function(){
+		var $this = $(this);
+		$this.toggleClass('gallery_more');
+		if($this.hasClass('gallery_more')){
+			$this.text('Load More');			
+		} else {
+			$this.text('Load Less');
+		}
+	});
     </script>
-</body>
+	<!-- templatemo 400 polygon -->
+  </body>
 </html>
